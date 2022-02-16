@@ -1,0 +1,6 @@
+import gzip
+import shutil
+
+with open(r'loction of file', 'rb') as f_in:
+    with gzip.open(r'target location of file', 'wb') as f_out:
+        shutil.copyfileobj(f_in, f_out)
